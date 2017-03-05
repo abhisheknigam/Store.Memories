@@ -1,0 +1,39 @@
+
+<ion-view title="Personal Chat Assistant" id="page3" >
+	
+    <!-- padding="true">-->
+    
+        <ion-pane class="messaging-view" ng-controller="personalChatAssistantCtrl">
+			<ion-content class="content-stable"
+				                 on-swipe-left="hideTime = false"
+				                 on-swipe-right="hideTime = true" >
+			<div id="personalChatAssistant-button-bar2" class="button-bar" >
+	            <a ui-sref="myStory" id="personalChatAssistant-button11" style="font-size:15px;" class="button button-dark  button-block button-outline">My Story</a>
+	            <button id="personalChatAssistant-button12" style="font-size:15px;" class="button button-dark  button-block">Chat</button>
+	            <a ui-sref="intelligentSchedulePlanner" id="personalChatAssistant-button13" style="font-size:15px;" class="button button-dark  button-block button-outline">Schedule</a>
+	        </div>
+
+				      <div ng-repeat="message in messages"
+				           ng-class="{other: message.userId != myId}"
+				           class="messages">
+
+				        <div class="message" ng-class="{'slide-right': hideTime, '': !hideTime}">
+				          <span>{{ message.text }}</span>
+				        </div>
+
+
+				      </div>
+
+				    </ion-content>
+
+				    <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+				      <label class="item-input-wrapper">
+				        <input type="text" placeholder="Type your message" on-return="sendUserMessage(); closeKeyboard()" ng-model="data.message" on-focus="inputUp()" on-blur="inputDown()" />
+				      </label>
+				      <button class="button button-clear" ng-click="sendUserMessage()">
+				        Send
+				      </button>
+				    </ion-footer-bar>
+    <!--</ion-content>-->
+</ion-pane>
+</ion-view>
