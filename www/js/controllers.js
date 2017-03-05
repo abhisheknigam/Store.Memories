@@ -29,7 +29,7 @@ function ($scope, $stateParams) {
 function($scope, $stateParams,$http,$timeout, $ionicScrollDelegate ) {
 
   $scope.hideTime = true;
-  var questionURL = 'http://10.6.38.3:8042/1/sendQuestion';
+  var questionURL = 'http://d7e475ef.ngrok.io/1/sendQuestion';
   var alternate,
     isIOS = ionic.Platform.isWebView() && ionic.Platform.isIOS();
   $scope.previousMessage='';
@@ -44,14 +44,27 @@ function($scope, $stateParams,$http,$timeout, $ionicScrollDelegate ) {
 	    });
     }else if($scope.previousMessage!=undefined && $scope.previousMessage != ''){
     	console.log({question:$scope.previousMessage});
-    	$http.post(questionURL, JSON.stringify({question:$scope.previousMessage})).then(function(res){
+      var request = $http({
+          method: "post",
+          url: questionURL,
+          data: {question:$scope.previousMessage}
+      }).success(
+          function( res ) {
+              $scope.messages.push({
+                userId: '12345',
+                text: res.answer
+              });
+          }
+      );
+
+    	/*$http.post(questionURL, JSON.stringify({question:$scope.previousMessage})).then(function(res){
     		alert('in bot message:'+JSON.stringify(res));
     		$scope.messages.push({
 		      userId: '12345',
 		      text: (JSON.parse(res)).answer
 		    });
 
-    	});
+    	});*/
     	console.log("after http");
     }
 
