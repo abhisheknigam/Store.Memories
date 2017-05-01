@@ -2,6 +2,14 @@
 https://devpost.com/software/store-memories
 # Caltech Hackathon - HackTech Project
 
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/018/datas/gallery.jpg)
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/019/datas/gallery.jpg)
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/020/datas/gallery.jpg)
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/021/datas/gallery.jpg)
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/169/datas/gallery.jpg)
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/170/datas/gallery.jpg)
+![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/172/datas/gallery.jpg)
+
 # Inspiration
 My, and the grandparents of two of my teammates suffer from Alzheimer's, and it is difficult to watch them slowly forget you. Every year, hundreds of thousands of people suffer from the same disease. Our inspiration to make this app was to make life a little better for them and their loved ones
 
