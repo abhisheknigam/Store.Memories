@@ -1,6 +1,6 @@
 # Store.Memories
 https://devpost.com/software/store-memories
-# Caltech Hackathon - HackTech Project
+# Caltech Hackathon - HackTech Project 
 
 ![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/018/datas/gallery.jpg)
 ![Alt text](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/486/019/datas/gallery.jpg)
